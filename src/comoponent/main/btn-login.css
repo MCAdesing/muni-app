@@ -1,0 +1,27 @@
+.btn-login{
+    text-align: center;
+    position: relative;
+    padding: 10px 20px;
+    width: 10em;
+    border-radius: 25px;
+    font-size: .5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    background-color: rgb(255, 134, 0);
+    color: #f8f9fa;
+    border: none;
+    box-shadow:  0 0 5px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.btn-login:hover{
+    background-color: rgb(97, 218, 251);
+}
+@media (max-width: 800px){
+    .btn-login{
+        position: relative;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 15px;
+    }
+}

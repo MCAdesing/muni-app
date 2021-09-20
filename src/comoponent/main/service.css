@@ -1,0 +1,68 @@
+.section-service{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+.section-service h2{
+    font-size: 2em;
+    color: rgb(34,34,34);
+    margin-bottom: 50px;
+}
+.service-grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(min-content,1fr));
+    justify-content: center;
+    gap: 15px;
+}
+.service-item {
+    position: relative;
+    max-height: 200px;
+    max-width: 300px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.service-item img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    object-position: center;
+}
+.service-item p{
+    margin: 5px 0;
+    text-align: center;
+    color: rgb(34,34,34);
+    font-weight: 500;
+}
+.service-item:hover > p{
+    color: rgb(255, 134, 0);
+}
+
+@media (max-width: 800px) {
+    .service-grid{
+        grid-template-columns: repeat(2,minmax(min-content,1fr));
+        padding: 20px 0;
+    }
+}
+@media (max-width: 500px) {
+    .section-service{
+        padding-top: 65px ;
+    }
+    .service-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .service-item{
+        width: 300px;
+        height: 200px;
+        justify-self: center;
+    }
+    .section-service h2{
+        font-size: 1.5em;
+    }
+}
